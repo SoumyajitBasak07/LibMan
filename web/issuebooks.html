@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Library Management System</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="heading">Welcome to Library Management System!</h1>
+    <p class="sub-heading">This system will let students borrow books and librarians keep count!</p>
+    <button class="buttons" onclick="window.location.href='../student.html'">Back</button>
+    <form class="forms">
+      <div>
+        <label for="username">Name: </label>
+        <input class="username" name="username" placeholder= "Enter your name" type="text" required>
+      </div>
+        <p class="form-book">Book: Demo</p>
+        <button class="buttons" onclick="handleIssueBook(event);">Submit</button>
+    </form>
+  </div>
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>

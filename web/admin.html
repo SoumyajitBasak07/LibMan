@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Library Management System</title>
+</head>
+
+<body>
+  <div class="container-page">
+    <h1 class="heading">Welcome to Library Management System!</h1>
+    <p class="sub-heading">This system will let students borrow books and librarians keep count!</p>
+    <button class="buttons" onclick="window.location.href='../index.html'">Back</button>
+    <div class="book-list" style="padding: 10px;">
+      <li class="admin-list-heading">
+        <span>Name</span>
+        <span>Fine</span>
+        <span>Genre</span>
+        <span>Quantity</span>
+        <span>Actions</span>
+      </li>
+      <ul class="books" >
+        <!-- Book List --> 
+      </ul>
+      </div>
+  </div>
+  <div class="add-book-card">
+    <h3>Add a book!</h3>
+    <form>
+      <input class="book_name" type="text" required placeholder="Enter the name of book" />
+      <input class="genre" type="Genre" required placeholder="Enter the Genre" />
+      <input class="fine" type="number" required placeholder="Enter the late fine" />
+      <input class="book_quantity" type="number" required placeholder="Enter the number of books" />
+      <button onclick="handleAddBook(event)">Add</button>
+  </form>
+  </div>
+
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
+  <script type="text/javascript">eel.public_book_list()().then(function(d){  append_book_items(d,true)})</script>
+</body>
+</html>

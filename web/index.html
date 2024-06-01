@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Library Management System</title>
+</head>
+
+<body style="overflow-x:hidden;overflow-y:hidden;">
+  <div class="container">
+    <h1 class="heading">Welcome to Library Management System!</h1>
+    <p class="sub-heading">This system will let students borrow books and librarians keep count!</p>
+    <p class="sub-heading" >Students click the button to issue the books</p>
+    <button class="index-buttons" style="display: block; margin: auto;" onclick="window.location.href='/student.html'">Student</button>
+    <p class="sub-heading" style="margin-bottom: 8px; margin-top: 80px;">Librarians enter your password and perform admin tasks</p>
+    <form class="index-form">
+      <div class="password">
+        <label style="font-size:x-large; padding-right:10px;" for="password">Password</label>
+        <input style="font-size:x-large;" class="admin-pass" name="password" placeholder="Enter the admin password" type="password" required>
+      </div>
+      <button class="index-buttons" onclick="handleAdminAccess(event);">Admin</button>
+    </form>
+  </div>
+
+  <script type="text/javascript" src="/eel.js"></script>
+  <script type="text/javascript" src="/main.js"></script>
+</body>
+</html>
